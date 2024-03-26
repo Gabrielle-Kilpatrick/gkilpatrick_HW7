@@ -13,13 +13,14 @@
             <h1>Business Analytics Student Survey</h1>
         </header>
         <main>
-            <form id="surveyForm1" onsubmit="return validateForm()">
-                <p> My Home Country is:</p>
-                <input type="text" name="home_country" id="home-country-input" autofocus>
-                <p> My Home Town is:<span class="required-field">(Required)</span></p>
-                <input type="text" name="home_town" id="home-town-input">
-                <p> My Home State is:</p>
-            <select name="state" id="state-select">
+            <main>
+                <form id="surveyForm1" onsubmit="return validateForm()">
+                    <label for="home-country-input">My Home Country is:</label>
+                    <input type="text" name="home_country" id="home-country-input" autofocus>
+                    <label for="home-town-input">My Home Town is:<span class="required-field">(Required)</span></label>
+                    <input type="text" name="home_town" id="home-town-input">
+                    <label for="state-select">My Home State is:</label>
+                    <select name="state" id="state-select">
                 <option value="">-- Choose State/Territory --</option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
@@ -82,8 +83,8 @@
                  <!-- Added Stupid People -->
                  <option value="SCC">Sovereign Citizen</option>
             </select>
-            <p>My Impression of the BAIS major is:<span class="required-field">(Required)</span></p>
-            <select name="impression" id="impression-select">
+            <label for="impression-select">My Impression of the BAIS major is:<span class="required-field">(Required)</span></label>
+                <select name="impression" id="impression-select">
                 <option value="">-- Select Scale Value --</option>
                 <option value="L1">1 - Very Negative</option>
                 <option value="L2">2 - Somewhat Negative</option>
