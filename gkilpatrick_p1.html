@@ -14,11 +14,11 @@
         </header>
         <main>
             <form id="surveyForm1" onsubmit="return validateForm()">
-            <p> My Home Country is:</p>
-            <input type="text" name="home_country" id="home-country-input" autofocus required>
-            <p> My Home Town is:</p>
-            <input type="text" name="home_town" id="home-town-input">
-            <p> My Home State is:</p>
+                <p> My Home Country is:</p>
+                <input type="text" name="home_country" id="home-country-input" autofocus>
+                <p> My Home Town is:<span class="required-field">(Required)</span></p>
+                <input type="text" name="home_town" id="home-town-input">
+                <p> My Home State is:</p>
             <select name="state" id="state-select">
                 <option value="">-- Choose State/Territory --</option>
                 <option value="AL">Alabama</option>
@@ -82,7 +82,7 @@
                  <!-- Added Stupid People -->
                  <option value="SCC">Sovereign Citizen</option>
             </select>
-            <p>My Impression of the BAIS major is:</p>
+            <p>My Impression of the BAIS major is:<span class="required-field">(Required)</span></p>
             <select name="impression" id="impression-select">
                 <option value="">-- Select Scale Value --</option>
                 <option value="L1">1 - Very Negative</option>
@@ -92,22 +92,21 @@
                 <option value="L5">5 - Very Positive</option>
             </select>
             <p> </p>
-            <button type="submit">Move on to Next Page</button>
+            <button onclick="window.location.href='gkilpatrick_p2.html';">
+                Move on to Next Page
+              </button>
             </form>
         </main>
     </div>
 
     <script>
-        function validateForm() {
-           var homeTown = document.getElementById("home-town-input").value;
-           var impressionSelect = document.getElementById("impression-select").value;
-           
-           if (homeTown == "" || impressionSelect == "") {
-               alert("Please fill out all required fields.");
-               return false;
-           }
-           return true;
-       }
-   </script>
+        var currentPage = 1;
+        var totalPages = 3;
+        var pageCounter = document.createElement('div');
+        pageCounter.textContent = 'Page ' + currentPage + ' of ' + totalPages;
+        pageCounter.style.textAlign = 'center';
+        pageCounter.style.marginTop = '20px';
+        document.body.appendChild(pageCounter);
+    </script>
 </body>
 </html>

@@ -39,6 +39,11 @@ input {
     margin-bottom: 15px;
 }
 
+.required-field {
+    font-size: 0.9em; /* Adjust the font size as needed */
+    color: red;
+}
+
 button {
     background-color: #007bff;
     color: #fff;
