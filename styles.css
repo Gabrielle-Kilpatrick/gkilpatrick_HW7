@@ -39,13 +39,29 @@ input {
     margin-bottom: 15px;
 }
 
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline-block; 
+    vertical-align: middle; 
+    margin-right: 5px; 
+}
+
+label {
+    display: inline-block; 
+    vertical-align: middle; 
+    text-align: left; 
+    margin-bottom: 5px; 
+    line-height: 1.5; 
+}
+
+
 .required-field {
-    font-size: 0.9em; /* Adjust the font size as needed */
+    font-size: 0.9em; 
     color: red;
 }
 
 button {
-    background-color: #007bff;
+    background-color: #d34bc8;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -54,5 +70,38 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #d34bc8;
+}
+
+.fontawesome {
+    font-size: 1.15rem;
+    color: #d34bc8;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+visibility: hidden;
+width: 200px;
+background-color: #333333;
+color: #f8f8f8;
+font-size: 1.15rem;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+border-radius: 6px;
+padding: 15px;
+
+/* Position the tooltip text */
+position: absolute;
+z-index: 1;
+top: 100%;
+left: 50%;
+margin-left: -100px;
+}
+
+.tooltip:hover .tooltiptext {
+visibility: visible;
 }
