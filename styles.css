@@ -60,6 +60,12 @@ label {
     color: red;
 }
 
+.optional-field {
+    font-size: 0.9em; 
+    color: blueviolet;
+}
+
+
 button {
     background-color: #d34bc8;
     color: #fff;
