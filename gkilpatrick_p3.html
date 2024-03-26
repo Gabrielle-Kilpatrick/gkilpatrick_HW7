@@ -13,12 +13,67 @@
             <h1>Business Analytics Student Survey</h1>
         </header>
         <main>
-            <p>Ask race/ethnicity question:</p>
-            <p>Ask gender/sex question:</p>
+            <p>
+                What race/ethnicity do you dominantly identify with?:
+                  <span class="tooltip">
+                    <i class="fa-solid fa-clipboard-question fontawesome"></i>
+                    <span class="tooltip tooltiptext">Letting us know how you identify yourself helps us measure and enhance diversity and inclusivity in tech by addressing historical race imbalances.</span>
+                </span>
+              </p>
+            <select name="race" id="race-select">
+                <option value="start">-- Options --</option>
+                <option value="wh">White</option>
+                <option value="blck">Black or African American</option>
+                <option value="hsp">Hispanic or Latino</option>
+                <option value="asia">Asian</option>
+                <option value="ntve">Native American</option>
+                <option value="hawwa">Native Hawaiian or Other Pacific Islander</option>
+                <option value="mddl">Middle Eastern or North African</option>
+                <option value="mxed">Mixed Race</option>
+                <option value="ott">Other</option>
+                <option value="none">I am Not Comfortable Sharing</option>
+            </select>
+            <p>
+                What gender indentities do you feel comfortable sharing?:
+                  <span class="tooltip">
+                    <i class="fa-solid fa-clipboard-question fontawesome"></i>
+                    <span class="tooltip tooltiptext">Letting us know how you identify yourself helps us measure and enhance diversity and inclusivity in tech by addressing historical gender imbalances.</span>
+                </span>
+              </p>
+            <div>
+                <input type="checkbox" id="gender1" name="gender_identity" value="Male">
+                <label for="gender1">Male</label><br>
+                <input type="checkbox" id="gender2" name="gender_identity" value="Female">
+                <label for="gender2">Female</label><br>
+                <input type="checkbox" id="gender3" name="gender_identity" value="Non-binary">
+                <label for="gender3">Non-binary</label><br>
+                <input type="checkbox" id="gender4" name="gender_identity" value="Transgender">
+                <label for="gender4">Transgender</label><br>
+                <input type="checkbox" id="gender5" name="gender_identity" value="Genderqueer">
+                <label for="gender5">Genderqueer</label><br>
+                <input type="checkbox" id="gender6" name="gender_identity" value="Genderfluid">
+                <label for="gender6">Genderfluid</label><br>
+                <input type="checkbox" id="gender7" name="gender_identity" value="Agender">
+                <label for="gender7">Agender</label><br>
+                <input type="checkbox" id="gender8" name="gender_identity" value="Private">
+                <label for="gender8">I am Not Comfortable Sharing</label><br>
+                <input type="checkbox" id="gender9" name="gender_identity" value="Other">
+                <label for="gender9">Other</label><br><br>
+            </div>
             <button onclick="window.location.href='gkilpatrick_p4.html';">
                 Finish Survey
               </button>
         </main>
     </div>
+
+    <script>
+        var currentPage = 3;
+        var totalPages = 3;
+        var pageCounter = document.createElement('div');
+        pageCounter.textContent = 'Page ' + currentPage + ' of ' + totalPages;
+        pageCounter.style.textAlign = 'center';
+        pageCounter.style.marginTop = '20px';
+        document.body.appendChild(pageCounter);
+    </script>
 </body>
 </html>

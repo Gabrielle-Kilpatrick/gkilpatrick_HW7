@@ -14,11 +14,51 @@
         </header>
         <main>
             <p>I am finishing my:<span class="required-field">(Required)</span></p>
+            <div>
+            <input type="radio" id="yr1" name="finishing" value="First Year at Iowa">
+            <label for="yr1">First Year at Iowa</label><br>
+            <input type="radio" id="yr2" name="finishing" value="Second Year at Iowa">
+            <label for="yr2">Second Year at Iowa</label><br>
+            <input type="radio" id="y3" name="finishing" value="Third Year at Iowa">
+            <label for="yr3">Third Year at Iowa</label><br>
+            <input type="radio" id="yr4" name="finishing" value="Fourth Year at Iowa">
+            <label for="yr4">Fourth Year at Iowa</label><br>
+            <input type="radio" id="yr5" name="finishing" value="Fifth or More Year at Iowa">
+            <label for="yr5">Fifth or More Year at Iowa</label><br><br>
+            </div>
             <p> BAIS core classes that I have completed:</p>
+            <div>
+                <input type="checkbox" id="class1" name="core_class" value="Information Systems">
+                <label for="class1">Information Systems</label><br>
+                <input type="checkbox" id="class2" name="core_class" value="Operations">
+                <label for="class2">Operations</label><br>
+                <input type="checkbox" id="class3" name="core_class" value="Foundations of Business Analytics">
+                <label for="class3">Foundations of Business Analytics</label><br>
+                <input type="checkbox" id="class4" name="core_class" value="Computational Thinking">
+                <label for="class4">Computational Thinking</label><br>
+                <input type="checkbox" id="class5" name="core_class" value="Database Management">
+                <label for="class5">Database Management</label><br>
+                <input type="checkbox" id="class6" name="core_class" value="Data Wrangling">
+                <label for="class6">Data Wrangling</label><br>
+                <input type="checkbox" id="class7" name="core_class" value="Data Mining">
+                <label for="class7">Data Mining</label><br>
+                <input type="checkbox" id="class8" name="core_class" value="BAIS Capstone">
+                <label for="class8">BAIS Capstone</label><br><br>
+            </div>
             <button onclick="window.location.href='gkilpatrick_p3.html';">
                 Move on to Next Page
               </button>
-        </main>
+        </main>       
     </div>
+
+    <script>
+        var currentPage = 2;
+        var totalPages = 3;
+        var pageCounter = document.createElement('div');
+        pageCounter.textContent = 'Page ' + currentPage + ' of ' + totalPages;
+        pageCounter.style.textAlign = 'center';
+        pageCounter.style.marginTop = '20px';
+        document.body.appendChild(pageCounter);
+    </script>
 </body>
 </html>
